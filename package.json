@@ -1,0 +1,20 @@
+{
+  "name": "cf-ai-agent-pro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev": "npx wrangler dev",
+  "deploy": "npx wrangler deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@cloudflare/agents": "^0.0.16"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250927.0",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,38 @@
+{
+	"name": "cf-ai-agent-pro",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-08-01",
+	// Durable Object (Agent)
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "MyAgent",
+				"class_name": "MyAgent"
+			}
+		]
+	},
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_sqlite_classes": [
+				"MyAgent"
+			]
+		}
+	],
+	// Workers AI (LLMs)
+	"ai": {
+		"binding": "AI"
+	},
+	"vectorize": [
+		{
+			"binding": "VECTORIZE_INDEX",
+			"index_name": "agent-memory"
+		},
+		{
+			"binding": "VECTORIZE",
+			"index_name": "agent-memory",
+            "remote": true
+		}
+	]
+	// We'll add Vectorize + Workflows later after we get the basic app running
+}
