@@ -2,7 +2,7 @@
 
 > Cloudflare Agents SDK + Workers AI (Llama 3.3) + Vectorize = a fast, memory-aware chat agent with a Netflix-style interface and real-time streaming.
 
-**Live demo:** `https://<your-app>.workers.dev/app`  
+**Live demo:** `https://cf-ai-agent-pro.mohdsuf37.workers.dev/app`  
 **Repo:** `https://github.com/<you>/flixchat-cloudflare-agent`
 
 ---
